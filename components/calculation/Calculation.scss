@@ -1,0 +1,166 @@
+.calculation {
+	padding: 160px 0;
+
+	&-inner {
+		position: relative;
+		margin: 0 auto;
+		max-width: 1200px;
+	}
+
+	&__title {
+		max-width: 700px;
+		margin-left: 100px;
+		margin-bottom: 428px;
+	}
+
+	&-formula {
+		padding: 60px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: rgba($gr-9, 0.1);
+		border-radius: 20px;
+		backdrop-filter: blur(10px);
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 100%;
+		text-align: center;
+		color: $gr-9;
+
+		&__container {
+			position: absolute;
+			top: 40px;
+			left: 0;
+			padding: 100px;
+			width: 100%;
+			height: 400px;
+			background-image: url("../../public/assets/media/calculation_bg.png");
+			background-position: top;
+			background-repeat: no-repeat;
+			background-size: cover;
+
+			.equals {
+				width: 12px;
+				height: 8px;
+			}
+		}
+
+		&--left {
+			width: 157px;
+		}
+
+		&--center {
+			position: relative;
+			width: 275px;
+			display: flex;
+			align-items: center;
+
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				content: "";
+				width: 6px;
+				height: 100%;
+				background-image: url("../../public/assets/media/formula/3.svg");
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+
+			&::after {
+				position: absolute;
+				top: 0;
+				right: 0;
+				content: "";
+				width: 6px;
+				height: 100%;
+				background-image: url("../../public/assets/media/formula/4.svg");
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+
+			span {
+				padding: 16px 12px;
+				display: block;
+			}
+		}
+
+		&--right {
+			width: 308px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			row-gap: 12px;
+
+			&-divider {
+				width: 100%;
+				height: 2px;
+				background-color: $gr-9;
+			}
+		}
+	}
+
+	&__content {
+		position: relative;
+		margin-bottom: 160px;
+		padding: 80px 100px;
+
+		&-text {
+			max-width: 470px;
+			font-size: 25px;
+			font-weight: 500;
+			line-height: 130%;
+
+			span {
+				font-weight: 700;
+				color: $sh-4;
+			}
+		}
+
+		&-image {
+			position: absolute;
+			top: 0;
+			right: 100px;
+			width: 540px;
+			height: 384px;
+			background-image: url("../../public/assets/media/ipad.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+
+	&__tip {
+		margin: 0 auto;
+		padding: 20px;
+		width: 730px;
+		display: flex;
+		align-items: center;
+		column-gap: 20px;
+		border-radius: 20px;
+		background-color: rgba($white, 0.1);
+
+		&-icon {
+			position: relative;
+			width: 90px;
+			height: 90px;
+			border-radius: 20px;
+			background-color: $orange;
+
+			&::before {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 40px;
+				height: 40px;
+				content: "";
+				background-image: url("../../public/assets/media/calc_tip.svg");
+			}
+		}
+
+		span {
+			width: 580px;
+			font-size: 25px;
+		}
+	}
+}

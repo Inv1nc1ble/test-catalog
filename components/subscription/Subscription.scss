@@ -1,0 +1,44 @@
+.subscription {
+  padding: 160px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__inner {
+    padding: 60px;
+    width: 1000px;
+    border-radius: 30px;
+    background-color: $light-grey;
+
+    &-title {
+      margin-bottom: 40px;
+      line-height: 120%;
+    }
+  }
+
+  &__form {
+  }
+}
+
+.input {
+  margin-bottom: 0;
+  padding: 16px 240px 16px 28px;
+  width: 100%;
+  height: 76px;
+  border-radius: 10px;
+  border: 2px solid $gr-10;
+  display: block;
+  font-size: 20px;
+
+  color: $gr-9;
+  font-weight: 500;
+  text-align: left;
+  background-color: $light-grey;
+  -webkit-appearance: none;
+  outline: none;
+  font-family: "Gilroy", sans-serif;
+
+  &::placeholder {
+    font-family: "Gilroy", sans-serif;
+  }
+}

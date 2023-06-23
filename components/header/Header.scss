@@ -1,0 +1,38 @@
+.header {
+	position: fixed;
+	top: 40px;
+	width: 100%;
+	z-index: 99;
+
+	&__nav {
+		margin: 0 auto;
+		padding: 20px 30px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: rgba(#ffffff, 0.1);
+		border-radius: 50px;
+
+		&-center {
+			display: flex;
+			align-items: center;
+			column-gap: 40px;
+		}
+
+		&-button {
+			color: $white-grey;
+		}
+
+		&-right {
+			display: flex;
+			align-items: center;
+			column-gap: 40px;
+		}
+	}
+
+	&__logo {
+		width: 188px;
+		height: 40px;
+		display: block;
+	}
+}

@@ -1,0 +1,52 @@
+.month-income {
+	position: relative;
+	padding: 160px 0;
+
+	&__container {
+		margin: 0 auto;
+		max-width: 1000px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		margin-bottom: 40px;
+		max-width: 422px;
+	}
+
+	&__items {
+		z-index: 9;
+		padding: 10px;
+		display: flex;
+		column-gap: 10px;
+		background-color: $dark-grey;
+		border-radius: 30px;
+	}
+
+	&__item {
+		padding: 40px;
+		width: 320px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 40px;
+		background-color: $light-grey;
+		border-radius: 20px;
+
+		p {
+			color: $gr-9;
+		}
+	}
+
+	&__vector--1 {
+		position: absolute;
+		top: 100px;
+		left: 0;
+		width: 707px;
+		height: 729px;
+		// opacity: 0.3;
+		transform-origin: center;
+		background-image: url("../../public/assets/media/monthly_vector_1.svg");
+		background-repeat: no-repeat;
+	}
+}

@@ -1,0 +1,54 @@
+.authors {
+  height: 100vh;
+  width: 100%;
+  padding: 160px 0;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &__top {
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  &__carousel {
+    width: 100%;
+
+    &-item {
+      width: 400px;
+      height: 20px;
+      background-color: red;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-title {
+      margin-bottom: 40px;
+    }
+
+    &-btn {
+      width: 40px;
+      height: 40px;
+      background-image: url("../../public/assets/media/btn_arrow.svg");
+      border-radius: 50%;
+    }
+  }
+}
+
+.authors__carousel {
+  width: 100%;
+}
+
+.my-item {
+  background-color: green;
+}
