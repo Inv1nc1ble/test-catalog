@@ -21,9 +21,24 @@
     width: 100%;
 
     &-item {
-      width: 400px;
-      height: 20px;
-      background-color: red;
+      padding: 36px;
+      width: 600px;
+      display: flex;
+      justify-content: space-between;
+      column-gap: 40px;
+      background-color: $dark-grey;
+
+      &--left {
+        width: 261px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      &-img {
+        width: 220px;
+        height: 220px;
+      }
     }
   }
 
@@ -43,12 +58,4 @@
       border-radius: 50%;
     }
   }
-}
-
-.authors__carousel {
-  width: 100%;
-}
-
-.my-item {
-  background-color: green;
 }

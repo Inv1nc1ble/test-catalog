@@ -1,0 +1,129 @@
+.footer {
+  padding: 80px 0;
+
+  &__top {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 260px;
+    height: 60px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+
+  &__bottom {
+    margin: 0 auto;
+    width: 430px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 120%;
+    font-weight: 500;
+  }
+
+  &__payment {
+    &-icons {
+      display: flex;
+      column-gap: 10px;
+    }
+
+    &-icon {
+      position: relative;
+      width: 80px;
+      height: 60px;
+      background-color: $dark-grey;
+      border-radius: 10px;
+
+      &.mc {
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          content: "";
+          width: 30px;
+          height: 30px;
+          transform: translate(-50%, -50%);
+          background-image: url("../../public/assets/media/footer/mc.svg");
+        }
+      }
+
+      &.visa {
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          content: "";
+          width: 44px;
+          height: 16px;
+          transform: translate(-50%, -50%);
+          background-image: url("../../public/assets/media/footer/visa.svg");
+        }
+      }
+
+      &.stripe {
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          content: "";
+          width: 52px;
+          height: 21px;
+          transform: translate(-50%, -50%);
+          background-image: url("../../public/assets/media/footer/stripe.svg");
+        }
+      }
+    }
+  }
+  &__social-media {
+    display: flex;
+    column-gap: 12px;
+
+    &-item {
+      position: relative;
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-color: $dark-grey;
+      border-radius: 50%;
+
+      &.fb {
+        background-image: url("../../public/assets/media/footer/fb.svg");
+      }
+
+      &.instagram {
+        background-image: url("../../public/assets/media/footer/instagram.svg");
+      }
+
+      &.pinterest {
+        background-image: url("../../public/assets/media/footer/pinterest.svg");
+      }
+
+      &.telegram {
+        background-image: url("../../public/assets/media/footer/telegram.svg");
+      }
+
+      &.linkedin {
+        background-image: url("../../public/assets/media/footer/linkedin.svg");
+      }
+
+      &.youtube {
+        background-image: url("../../public/assets/media/footer/youtube.svg");
+      }
+
+      //   &::before {
+      //     position: absolute;
+      //     top: 50%;
+      //     left: 50%;
+      //     content: "";
+      //     transform: translate(-50%, -50%);
+      //   }
+    }
+  }
+}

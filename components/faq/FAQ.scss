@@ -1,0 +1,74 @@
+.faq {
+  padding: 160px 0;
+
+  &-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    max-width: 320px;
+    line-height: 100%;
+    font-weight: 500;
+  }
+}
+
+.accordion {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  &__item {
+    padding: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+
+    &-active {
+      background-color: $light-grey;
+      transition: background-color 0.2s linear;
+
+      .accordion__item-question {
+        &::before {
+          transform: rotate(180deg);
+        }
+      }
+
+      .accordion__item-answer {
+        opacity: 1;
+        max-height: unset;
+        transform: translateY(0);
+        transition: opacity 0.3s 0.1s linear, max-height 0.1s linear,
+          transform 0.3s linear 0.1s;
+      }
+    }
+
+    &-question {
+      position: relative;
+      padding-left: 34px;
+      font-size: 30px;
+      font-weight: 600;
+
+      &::before {
+        position: absolute;
+        left: 0;
+        top: 12px;
+        content: "";
+        transition: 0.3s transform linear;
+        width: 16px;
+        height: 9px;
+        background-image: url("../../public/assets/media/chevronRight.svg");
+      }
+    }
+
+    &-answer {
+      padding-left: 34px;
+      margin-top: 20px;
+      transform: translateY(12px);
+      opacity: 0;
+      max-height: 0;
+    }
+  }
+}

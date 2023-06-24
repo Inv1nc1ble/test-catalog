@@ -14,9 +14,44 @@
       margin-bottom: 40px;
       line-height: 120%;
     }
+
+    &-learn-more {
+      position: relative;
+      padding: 16px 16px 16px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0;
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid $gr-10;
+      font-size: 20px;
+    }
   }
 
   &__form {
+    position: relative;
+
+    &-btn {
+      padding: 14px 40px 14px 40px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      background-color: $orange;
+      color: $gr-9;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+
+      svg {
+        margin-left: 10px;
+        width: 16px;
+        height: 16px;
+      }
+    }
   }
 }
 
